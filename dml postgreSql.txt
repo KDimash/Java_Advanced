@@ -1,0 +1,35 @@
+CREATE TABLE students
+(
+    stu_id SERIAL PRIMARY KEY,
+    stu_name VARCHAR(30),
+    stu_phone VARCHAR(30)
+);
+
+SELECT * FROM students;
+
+INSERT INTO students(stu_name,stu_phone)
+VALUES ('Dimash','8(747)911 0694'),
+('Duman ','8(707)974 5684'),
+('Arman ','8(701)954 4562'),
+('Aslan ','8(700)845 5684'),
+('Ardak ','8(777)321 2145'),
+('Almat ','8(702)954 7845'),
+('Arbek ','8(703)517 8454');
+
+
+CREATE TABLE Group_s
+(
+    g_id SERIAL PRIMARY KEY,
+    g_name VARCHAR(30)
+);
+
+SELECT * FROM Group_s;
+
+INSERT INTO Group_s(g_name)
+VALUES ('cs-1901'),
+('cs-1902'),
+('cs-1903'),
+('cs-1904'),
+('cs-1905'),
+('cs-1906'),
+('cs-1907');
